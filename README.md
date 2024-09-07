@@ -1,4 +1,5 @@
 # com carinho - Projeto da Imersão Dev com Google Gemini
+![GifdoSite](Print.png)
 
 ## Proposta
 
