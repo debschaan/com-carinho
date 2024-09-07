@@ -1,0 +1,71 @@
+.container {
+    /* Define o container como um container flex, permitindo um layout flexível e responsivo. */
+    display: flex;
+    /* Justifica o conteúdo do container ao centro horizontalmente. */
+    justify-content: center;
+    /* Alinha os elementos filhos do container verticalmente ao centro. */
+    align-items: center;
+    /* Define a altura do container como 50% da altura da viewport. */
+    height: 100%;
+    /* Remove as margens do container. */
+    margin: 0;
+    /* Oculta o container inicialmente. */
+    visibility: hidden;
+    /* Define o posicionamento do container como absoluto, permitindo posicioná-lo manualmente. */
+    position: absolute;
+    /* Posiciona o container horizontalmente no centro da viewport. */
+    left: 50vw;
+    /* Posiciona o container verticalmente no centro da viewport. */
+    top: 50vh;
+    /* Desloca o container para a esquerda em 50% e para cima em 50%, centralizando-o. */
+    transform: translate(-50%, -50%);
+    /* Define o índice z do container como 9999, colocando-o acima de outros elementos. */
+    z-index: 9999;
+}
+
+.container.active {
+    /* Torna o container visível. */
+    visibility: visible;
+}
+
+.respirar {
+    /* Define a largura do elemento respirando como 8rem. */
+    width: 8rem;
+    /* Define a altura do elemento respirando como 8rem. */
+    height: 8rem;
+    /* Arredonda as bordas do elemento respirando para 50%. */
+    border-radius: 50%;
+    /* Define a cor de fundo do elemento respirando como azul. */
+    background-color: var(--azul);
+    /* Define o elemento respirando como um container flex, permitindo um layout flexível e responsivo. */
+    display: flex;
+    /* Justifica o conteúdo do elemento respirando ao centro horizontalmente. */
+    justify-content: center;
+    /* Alinha os elementos filhos do elemento respirando verticalmente ao centro. */
+    align-items: center;
+    /* Define o tamanho da fonte do texto dentro do elemento respirando como 1.5rem. */
+    font-size: 1.5rem;
+    /* Define a cor do texto dentro do elemento respirando como azul-escuro. */
+    color: var(--azul-escuro);
+    /* Define o posicionamento do elemento respirando como relativo, permitindo posicioná-lo em relação ao seu pai. */
+    position: relative;
+    /* Aplica a animação "respira-exala" ao elemento respirando, com duração de 6 segundos, repetição infinita e efeito de entrada e saída suave. */
+    animation: respira-exala 6s infinite ease-in-out;
+}
+
+@keyframes respira-exala {
+    /* No início e no final da animação, escala o elemento respirando para 1 (tamanho original). */
+    0%,
+    100% {
+        transform: scale(1);
+        /* Define o conteúdo do elemento respirando como "Exale". */
+        content: "Exale";
+    }
+
+    /* A meio caminho da animação, escala o elemento respirando para 1.5 (aumentando o tamanho). */
+    50% {
+        transform: scale(1.5);
+        /* Define o conteúdo do elemento respirando como "Respire". */
+        content: "Respire";
+    }
+}

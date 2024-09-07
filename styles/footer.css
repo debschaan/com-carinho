@@ -1,0 +1,16 @@
+footer {
+    /* Define o elemento como um container flex, permitindo um layout flexível e responsivo. */
+    display: flex; 
+    /* Organiza os itens flexíveis em uma coluna vertical, um abaixo do outro. Ideal para layouts de card, navegações verticais, etc. */
+    flex-direction: column; 
+    /* Cria um espaço de 0.7rem entre os elementos para melhorar a legibilidade e hierarquia visual. */
+    gap: .7rem; 
+    /* Alinha o texto horizontalmente ao centro para um visual mais equilibrado e atraente. */
+    text-align: center; 
+    /* Adiciona um espaço interno de 2rem para criar uma área de respiro em torno do conteúdo e evitar que o texto fique colado nas bordas. */
+    padding: 2rem; 
+    /* Utiliza a variável de cor --azul-acizentado para garantir a consistência visual em toda a aplicação e facilitar futuras alterações. */
+    color: var(--azul-acizentado); 
+    /* Define a posição do elemento como estática, ou seja, de acordo com o fluxo normal do documento. É o valor padrão e garante que o elemento não seja afetado por outras propriedades de posicionamento. */
+    position: static; 
+}

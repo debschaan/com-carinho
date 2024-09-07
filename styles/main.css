@@ -1,0 +1,195 @@
+main {
+    /* Adiciona um espaço interno de 2rem ao redor do conteúdo do main. */
+    padding: 2rem;
+    /* Define o main como um container flex, permitindo um layout flexível e responsivo. */
+    display: flex;
+    /* Organiza os elementos filhos do main em uma coluna vertical. */
+    flex-direction: column;
+    /* Alinha os elementos filhos do main horizontalmente ao centro. */
+    align-items: center;
+}
+
+/* Seção de pesquisa */
+.pesquisa {
+    /* Define a pesquisa como um container flex, permitindo um layout flexível e responsivo. */
+    display: flex;
+    /* Organiza os elementos filhos da pesquisa em uma coluna vertical. */
+    flex-direction: column;
+    /* Alinha os elementos filhos da pesquisa horizontalmente ao centro. */
+    align-items: center;
+    /* Cria um espaço de 1.5rem entre os elementos filhos da pesquisa. */
+    gap: 1.5rem;
+    /* Cria uma margem inferior de 2rem para separar a pesquisa dos resultados. */
+    margin-bottom: 2rem;
+}
+
+/* Estiliza o input dentro da pesquisa */
+.pesquisa input {
+    /* Define a largura do campo de pesquisa como 30rem. */
+    width: 30rem;
+    /* Remove a borda padrão do campo de pesquisa. */
+    border: none;
+    /* Adiciona um espaço interno de 1rem ao campo de pesquisa. */
+    padding: 1rem;
+    /* Arredonda as bordas do campo de pesquisa. */
+    border-radius: 1.5rem;
+    /* Define a cor do texto dentro do campo de pesquisa como azul-escuro. */
+    color: var(--azul-escuro);
+    /* Define o tamanho da fonte do texto dentro do campo de pesquisa como 1rem. */
+    font-size: 1rem;
+    /* Alinha o texto dentro do campo de pesquisa ao centro. */
+    text-align: center;
+    /* Define a fonte do texto dentro do campo de pesquisa como 'Urbanist', uma fonte sans-serif. */
+    font-family: 'Urbanist', sans-serif;
+}
+
+/* Botão buscar */
+.pesquisa button {
+    /* Remove a borda do botão. */
+    border: none;
+    /* Define a cor do texto do botão como branca. */
+    color: white;
+    /* Define o cursor do botão como ponteiro, indicando que é clicável. */
+    cursor: pointer;
+    /* Define o tamanho da fonte do botão como 1rem. */
+    font-size: 1rem;
+    /* Arredonda as bordas do botão. */
+    border-radius: .5rem;
+    /* Define o peso da fonte do botão como negrito. */
+    font-weight: bold;
+    /* Define a cor de fundo do botão como azul-claro. */
+    background-color: var(--azul-claro);
+    /* Adiciona um espaço interno de 1rem na vertical e 2rem na horizontal ao botão. */
+    padding: 1rem 2rem;
+    /* Define a fonte do botão como 'Urbanist', uma fonte sans-serif. */
+    font-family: 'Urbanist', sans-serif;
+}
+
+.pesquisa button:hover {
+    /* Quando o botão é hoverado, muda a cor de fundo para azul-escuro. */
+    background-color: var(--azul-escuro);
+    /* Escurece a cor branca em 10% para criar um efeito de sombra. */
+    background: darken(white, 10%);
+    /* Adiciona uma transição suave para a mudança de cor. */
+    transition: all .4s ease-in-out;
+}
+
+.resultados {
+    /* Define os resultados como um container flex, permitindo um layout flexível e responsivo. */
+    display: flex;
+    /* Permite que os elementos filhos dos resultados sejam quebrados em várias linhas. */
+    flex-wrap: wrap;
+    /* Justifica o conteúdo dos resultados ao centro. */
+    justify-content: center;
+    /* Cria um espaço de 2.5rem entre os elementos filhos dos resultados. */
+    gap: 2.5rem;
+    /* Define a largura máxima da caixa de resultados como 80rem. */
+    width: 80rem;
+    /* Define a altura da caixa de resultados como automática, ajustando-se ao conteúdo. */
+    height: auto;
+}
+
+.item {
+    /* Define os itens como um container flex, permitindo um layout flexível e responsivo. */
+    display: flex;
+    /* Organiza os elementos filhos dos itens em uma coluna vertical. */
+    flex-direction: column;
+    /* Alinha os elementos filhos dos itens verticalmente ao centro. */
+    justify-content: center;
+    /* Cria um espaço de 1rem entre os elementos filhos dos itens. */
+    gap: 1rem;
+    /* Remove a borda dos itens. */
+    border: none;
+    /* Arredonda as bordas dos itens. */
+    border-radius: .5rem;
+    /* Adiciona um espaço interno de 3rem aos itens. */
+    padding: 3rem;
+    /* Adiciona uma sombra leve aos itens. */
+    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, 0.4);
+    /* Define a largura dos itens como 30rem. */
+    width: 30rem;
+    /* Define a altura dos itens como automática, ajustando-se ao conteúdo. */
+    height: auto;
+}
+
+.tecnica {
+    /* Define o tamanho da fonte da técnica como 1.5rem. */
+    font-size: 1.5rem;
+    /* Alinha o texto da técnica ao centro. */
+    text-align: center;
+}
+
+.descricao {
+    /* Define o peso da fonte da descrição como 400 (normal). */
+    font-weight: 400;
+    /* Alinha o texto da descrição à esquerda. */
+    text-align: left;
+    /* Define a largura da descrição como automática, ajustando-se ao conteúdo. */
+    width: auto;
+    /* Define a altura da linha da descrição como 1.5rem. */
+    line-height: 1.5rem;
+    /* Define o tamanho da fonte da descrição como 1.1rem. */
+    font-size: 1.1rem;
+}
+
+.informacoes {
+    /* Remove a decoração do texto do link. */
+    text-decoration: none;
+    /* Define a cor do texto do link como azul-escuro. */
+    color: var(--azul-escuro);
+    /* Remove a borda do link. */
+    border: none;
+    /* Define o cursor do link como ponteiro, indicando que é clicável. */
+    cursor: pointer;
+    /* Define o tamanho da fonte do link como 1rem. */
+    font-size: 1rem;
+    /* Arredonda as bordas do link. */
+    border-radius: .5rem;
+    /* Define o peso da fonte do link como negrito. */
+    font-weight: bold;
+    /* Define a cor de fundo do link como bege. */
+    background-color: var(--bege);
+    /* Define a opacidade do link como 0.7. */
+    opacity: .7;
+    /* Adiciona um espaço interno de 1rem na vertical e 1rem na horizontal ao link. */
+    padding: 1rem 1rem;
+    /* Define a largura do link como 12rem. */
+    width: 12rem;
+    /* Alinha o link ao centro verticalmente. */
+    align-self: center;
+    /* Alinha o texto do link ao centro horizontalmente. */
+    text-align: center;
+}
+
+/* Estilo dos cards */
+.card1,
+.card6 {
+    /* Define a cor de fundo dos cards 1 e 6 como azul-escuro. */
+    background-color: var(--azul-escuro);
+    /* Define a cor do texto dos cards 1 e 6 como bege. */
+    color: var(--bege);
+}
+
+.card3,
+.card8 {
+    /* Define a cor de fundo dos cards 3 e 8 como lilás. */
+    background-color: var(--lilas);
+    /* Define a cor do texto dos cards 3 e 8 como azul-escuro. */
+    color: var(--azul-escuro);
+}
+
+.card4,
+.card9 {
+    /* Define a cor de fundo dos cards 4 e 9 como azul. */
+    background-color: var(--azul);
+    /* Define a cor do texto dos cards 4 e 9 como bege. */
+    color: var(--bege);
+}
+
+    /* Define a cor de fundo */
+.card2,
+.card7,
+.card5 {
+    background-color: var(--azul-acizentado);
+    color: var(--bege);
+}

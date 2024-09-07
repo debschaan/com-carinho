@@ -1,0 +1,36 @@
+.navegacao {
+    /* Define a navegação como um container flex, permitindo um layout flexível e responsivo. */
+    display: flex;
+    /* Justifica o conteúdo da navegação ao centro. */
+    justify-content: center;
+    /* Remove a lista de marcadores da navegação. */
+    list-style: none;
+    /* Adiciona um espaço interno de 2rem à navegação. */
+    padding: 2rem;
+}
+
+.navegacao-item a,
+.navegacao-item button {
+    /* Remove a decoração do texto dos links e botões. */
+    text-decoration: none;
+    /* Remove o background dos links e botões. */
+    background: none;
+    /* Remove a borda dos links e botões. */
+    border: none;
+    /* Define o tamanho da fonte dos links e botões como 1.2rem. */
+    font-size: 1.2rem;
+    /* Define o cursor dos links e botões como ponteiro, indicando que são clicáveis. */
+    cursor: pointer;
+    /* Define a cor do texto dos links e botões como azul-escuro. */
+    color: var(--azul-escuro);
+    /* Define a fonte dos links e botões como 'Urbanist', uma fonte sans-serif. */
+    font-family: "Urbanist", sans-serif;
+    /* Adiciona um espaço interno de 0 na vertical e 1rem na horizontal aos links e botões. */
+    padding: 0 1rem;
+}
+
+.navegacao-item a:hover,
+.navegacao-item button:hover {
+    /* Quando os links ou botões são hoverados, define o peso da fonte como 600 (semi-negrito). */
+    font-weight: 600;
+}

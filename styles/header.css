@@ -1,0 +1,22 @@
+header {
+    /* Alinha o conteúdo do header horizontalmente ao centro. */
+    text-align: center; 
+    /* Adiciona um espaço interno de 2rem na vertical e 1rem na horizontal. */
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    /* Define o tamanho da fonte do título como 5rem. */
+    font-size: 5rem; 
+    /* Utiliza a cor azul-escuro definida na variável --azul-escuro. */
+    color: var(--azul-escuro); 
+    /* Cria uma margem inferior de 1rem para separar o título do próximo elemento. */
+    margin-bottom: 1rem;
+}
+
+header p {
+    /* Define o tamanho da fonte do parágrafo como 1.2rem. */
+    font-size: 1.2rem; 
+    /* Utiliza a cor azul-acinzentado definida na variável --azul-acizentado. */
+    color: var(--azul-acizentado);
+}

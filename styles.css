@@ -1,0 +1,66 @@
+/* Importa os arquivos CSS do header, footer, main, navbar e respirar. */
+@import url(/styles/header.css);
+@import url(/styles/footer.css);
+@import url(/styles/main.css);
+@import url(/styles/navbar.css);
+@import url(/styles/respirar.css);
+
+/* Define as variáveis de cor globais. */
+:root {
+    --azul-escuro: #395176;
+    --azul: #90b1cf;
+    --azul-claro: #a9c8d9;
+    --lilas: #bdb0ca;
+    --azul-acizentado: #9295b7;
+    --bege: #f4efe9;
+}
+
+/* Estiliza o elemento body. */
+body {
+    /* Define a fonte padrão do corpo como 'Urbanist', uma fonte sans-serif. */
+    font-family: "Urbanist", sans-serif;
+    /* Define a cor de fundo do corpo como bege. */
+    background-color: var(--bege);
+    /* Define a cor do texto do corpo como azul-escuro. */
+    color: var(--azul-escuro);
+    /* Define o tamanho da fonte do corpo como 16px. */
+    font-size: 16px;
+    /* Define o corpo como um container flex, permitindo um layout flexível e responsivo. */
+    display: flex;
+    /* Organiza os elementos filhos do corpo em uma coluna vertical. */
+    flex-direction: column;
+    /* Alinha os elementos filhos do corpo horizontalmente ao centro. */
+    align-items: center;
+    /* Alinha os elementos filhos do corpo verticalmente ao centro. */
+    justify-content: center;
+    /* Define a altura mínima do corpo como 100vh, garantindo que ocupe toda a altura da viewport. */
+    min-height: 100vh;
+}
+
+/* Estiliza o elemento sobrepor quando está ativo. */
+.sobrepor.active {
+    /* Torna o elemento sobrepor visível. */
+    visibility: visible;
+    /* Define a opacidade do elemento sobrepor como 10 (totalmente opaco). */
+    opacity: 10;
+}
+
+/* Estiliza o elemento sobrepor. */
+.sobrepor {
+    /* Oculta o elemento sobrepor inicialmente. */
+    visibility: hidden;
+    /* Define o posicionamento do elemento sobrepor como fixo, fixando-o na viewport. */
+    position: fixed;
+    /* Define a altura do elemento sobrepor como 100% da altura da viewport. */
+    height: 100%;
+    /* Define a largura do elemento sobrepor como 100% da largura da viewport. */
+    width: 100%;
+    /* Define a cor de fundo do elemento sobrepor como preta com uma opacidade de 0.739. */
+    background-color: rgba(0, 0, 0, 0.739);
+    /* Define a opacidade inicial do elemento sobrepor como 0 (totalmente transparente). */
+    opacity: 0;
+    /* Define o índice z do elemento sobrepor como 10, colocando-o acima de outros elementos. */
+    z-index: 10;
+    /* Adiciona uma transição suave para a mudança de opacidade do elemento sobrepor. */
+    transition: 0.6s ease;
+}
